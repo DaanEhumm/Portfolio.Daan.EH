@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Daan Hummeling</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" >
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="logo">Daan Hummeling</div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-content animate-in">
+      <h1>Daan Hummeling</h1>
+      <p>Software Development Student</p>
+    </div>
+  </header>
+
+  <section id="projects">
+  <div class="project-card">
+  <div class="slider">
+    <img src="images/Images/3dGameSS.png" alt="Shooter gameplay 1" class="slide active">
+    <img src="images/Images/3dGameSS.png2" alt="Shooter gameplay 2" class="slide">
+    <img src="images/Images/3dGameSS.png3" alt="Shooter gameplay 3" class="slide">
+  </div>
+  <div class="project-text">
+    <h3>Target Trainer 3D</h3>
+    <p>Een snelle 3D shooter mini-game waarin je op doelen schiet in een testomgeving. Hoe sneller en preciezer je bent, hoe hoger je scoort op het leaderboard.</p>
+    <p><strong>Tools:</strong> Unity, C#</p>
+    <a href="https://github.com/DaanEhumm/Unity3DGame" class="btn" target="_blank">View on GitHub</a>
+  </div>
+</div>
+
+  <div class="project-section project-two">
+    <div class="project-content animate-in">
+      <h2>Project Two</h2>
+      <p>Another cool project with some extra flavor and clever use of tech.</p>
+      <p><strong>Tools:</strong> React, Node.js</p>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+</section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/DaanEhumm">yourprofile</a></p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Daan Hummeling</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
+  </script>
+  <script>
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }, 5000); // 5 seconden
+</script>
+
+</body>
+</html>

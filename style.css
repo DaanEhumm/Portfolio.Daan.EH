@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d1117;
+  color: #e6edf3;
+  line-height: 1.75;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: rgba(13, 17, 23, 0.9);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #21262d;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  color: #58a6ff;
+  font-size: 1.6rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #e6edf3;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  height: 2px;
+  width: 0;
+  background: #58a6ff;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #58a6ff;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: radial-gradient(circle at top left, #111822, #0d1117);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  color: #58a6ff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  color: #8b949e;
+  margin-top: 1rem;
+}
+
+.project-section {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 4rem;
+  position: relative;
+}
+
+.project-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(13, 17, 23, 0.6);
+  z-index: 0;
+}
+
+.project-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  color: #fff;
+}
+
+.project-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #58a6ff;
+}
+
+.project-content p {
+  font-size: 1.2rem;
+  color: #c9d1d9;
+}
+
+.project-content strong {
+  color: #8b949e;
+}
+.project-one {
+  background-image: url('https://via.placeholder.com/1600x900?text=Project+One');
+}
+
+.project-two {
+  background-image: url('https://via.placeholder.com/1600x900?text=Project+Two');
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.6rem;
+  background: #238636;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #2ea043;
+}
+
+.contact {
+  padding: 5rem 2rem;
+  text-align: center;
+  background-color: #161b22;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #58a6ff;
+}
+
+.contact a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0d1117;
+  color: #8b949e;
+}
+
+/* Animations */
+.animate-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-in.visible {
+  opacity: 1;
+  transform: translateY(0); 
+} 
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #161b22;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  margin: 4rem 2rem;
+}
+
+.project-gallery {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-color: #0d1117;
+}
+
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-bottom: 1px solid #21262d;
+}
+
+.project-text {
+  flex: 1 1 400px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #0d1117;
+}
+
+.project-text h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #58a6ff;
+}
+
+.project-text p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #c9d1d9;
+}
+
+.project-text strong {
+  color: #8b949e;
+} 
+.slider {
+  flex: 1 1 400px;
+  position: relative;
+  overflow: hidden;
+  background-color: #0d1117;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
