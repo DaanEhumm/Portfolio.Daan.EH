@@ -26,29 +26,73 @@
   </header>
 
   <section id="projects">
-  <div class="project-card">
-  <div class="slider">
-    <img src="images/3DGameSS.png" alt="Shooter gameplay 1" class="slide active">
-    <img src="images/3DGameSS2.png" alt="Shooter gameplay 2" class="slide">
-    <img src="images/3DGameSS3.png" alt="Shooter gameplay 3" class="slide">
-    <img src="images/3DGameSS4.png" alt="Shooter gameplay 4" class="slide">
-  </div>
-  <div class="project-text">
-    <h3>Target Trainer 3D</h3>
-    <p>Een snelle 3D shooter mini-game waarin je op doelen schiet in een testomgeving. Hoe sneller en preciezer je bent, hoe hoger je scoort op het leaderboard.</p>
-    <p><strong>Tools:</strong> Unity, C#</p>
-    <a href="https://github.com/DaanEhumm/Unity3DGame" class="btn" target="_blank">View on GitHub</a>
-  </div>
-</div>
 
-  <div class="project-section project-two">
-    <div class="project-content animate-in">
-      <h2>Project Two</h2>
-      <p>Another cool project with some extra flavor and clever use of tech.</p>
-      <p><strong>Tools:</strong> React, Node.js</p>
-      <a href="#" class="btn">See More</a>
+  <!-- C++ Project 1 -->
+  <h2 class="section-title">C++ Projects</h2>
+
+  <div class="project-card">
+    <div class="slider">
+      <img src="images/C++game2dss.png" alt="C++ Project 1 screenshot" class="slide active">
+      <img src="images/C++game2dss2.png" alt="C++ Project 1 screenshot 2" class="slide">
+      <img src="images/c++game2dss3.png" alt="C++ project 1 screenshot 3" class="slide">
+    </div>
+    <div class="project-text">
+      <h3>Pathfinding Visualizer</h3>
+      <p>invullen game notes </p>
+      <p><strong>Tools:</strong> C++, SFML</p>
+      <a href="https://github.com/JuulScripts/Tower-Defense-J_D/tree/main/Assets" class="btn" target="_blank">View on GitHub</a>
     </div>
   </div>
+
+  <!-- C++ Project 2 -->
+  <div class="project-card">
+    <div class="slider">
+      <img src="images/CppProject2.png" alt="C++ Project 2 screenshot" class="slide active">
+      <img src="images/CppProject2b.png" alt="C++ Project 2 screenshot 2" class="slide">
+    </div>
+    <div class="project-text">
+      <h3>Game of Life</h3>
+      <p> invullen game notes </p>
+      <p><strong>Tools:</strong> C++, SDL2</p>
+      <a href="https://github.com/DaanEhumm/CppGameOfLife" class="btn" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+
+
+  <!-- Divider before Unity C# projects -->
+  <h2 class="section-title">Unity C# Projects</h2>
+
+  <!-- Unity Project 1 (3D shooter) -->
+  <div class="project-card">
+    <div class="slider">
+      <img src="images/3DGameSS.png" alt="Target Trainer 3D gameplay 1" class="slide active">
+      <img src="images/3DGameSS2.png" alt="Target Trainer 3D gameplay 2" class="slide">
+      <img src="images/3DGameSS3.png" alt="Target Trainer 3D gameplay 3" class="slide">
+      <img src="images/3DGameSS4.png" alt="Target Trainer 3D gameplay 4" class="slide">
+    </div>
+    <div class="project-text">
+      <h3>Target Trainer 3D</h3>
+      <p>A fast-paced 3D shooter mini-game where you practice your aim by shooting targets in a test arena. The faster and more precise you are, the higher you score on the leaderboard.</p>
+      <p><strong>Tools:</strong> Unity, C#</p>
+      <a href="https://github.com/DaanEhumm/Unity3DGame" class="btn" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+
+  <!-- Unity Project 2 (2D survival) -->
+  <div class="project-card">
+    <div class="slider">
+      <img src="images/2DGameSS.png" alt="Survival game screenshot 1" class="slide active">
+      <img src="images/2DGameSS2.png" alt="Survival game screenshot 2" class="slide">
+      <img src="images/2DGameSS3.png" alt="Survival game screenshot 3" class="slide">
+    </div>
+    <div class="project-text">
+      <h3>Survival Arena 2D</h3>
+      <p>A challenging 2D survival game where the objective is simple: stay alive for as long as possible. Waves of enemies continuously spawn, and once you die, it’s game over — restart and try to beat your best time.</p>
+      <p><strong>Tools:</strong> Unity, C#</p>
+      <a href="https://github.com/DaanEhumm/Unity2DGame" class="btn" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+
 </section>
 
   <section id="contact" class="contact">
@@ -75,22 +119,26 @@
     document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
   </script>
   <script>
-  const slides = document.querySelectorAll('.slide');
-  let currentSlide = 0;
+  // For each project-card slider, set up its own cycle
+  document.querySelectorAll('.slider').forEach(slider => {
+    const slides = slider.querySelectorAll('.slide');
+    let currentSlide = 0;
 
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-      if (i === index) {
-        slide.classList.add('active');
-      }
-    });
-  }
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+          slide.classList.add('active');
+        }
+      });
+    }
 
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }, 5000); // 5 seconden
+    // Auto-play this slider
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }, 5000); // 5 seconds per slide
+  });
 </script>
 
 </body>
