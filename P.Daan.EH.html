@@ -19,50 +19,57 @@
   </nav>
 
   <header class="hero" id="home">
-    <div class="hero-content animate-in">
+    <div class="hero-float-text">print("Hello, world!")</div>
+  <div class="hero-content animate-in">
+    <div class="hero-inner">
       <h1>Daan Hummeling</h1>
       <p>Software Development Student</p>
+      <a href="https://github.com/DaanEhumm" class="btn">View My Work on Github </a>
     </div>
-  </header>
+  </div>
+</header>
+<!-- About me-->
+ <section id="about" class="about animate-in">
+  <div class="about-container">
+    <img src="images/BackgroundSS.jpg" alt="Daan Hummeling" class="about-img">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi, I’m Daan,— a 22-year-old software development student with a big passion for gaming and coding.
+        I only started programming in January 2025, but I’ve been hooked ever since writing my first script.
+        What I really enjoy is problem-solving, logical thinking, and seeing all the pieces of a project come together.
+      </p>
+      <p>
+        Since February 2025, I’ve been enrolled in a three-year software development study,
+        where I’ve made rapid progress — joining halfway through year one and, just six months later, already moving into year three.
+        My main focus has been on <code>C#</code> and some <code>C++</code> projects to learn the fundamentals and workflow,
+        but I also have basic knowledge of <code>HTML</code> and <code>CSS</code>.
+        I’m a quick learner and always eager to pick up new tools, languages, or work methods if it helps me grow as a developer.
+      </p>
+    </div>
+  </div>
+</section>
 
   <section id="projects">
-
-  <!-- C++ Project 1 -->
-  <h2 class="section-title">C++ Projects</h2>
-
-  <div class="project-card">
+  <h2 class="section-title">Unity C# Projects</h2>
+  <!-- Unity Project 1 (3d type )-->
+<div class="project-card">
     <div class="slider">
-      <img src="images/C++game2dss.png" alt="C++ Project 1 screenshot" class="slide active">
-      <img src="images/C++game2dss2.png" alt="C++ Project 1 screenshot 2" class="slide">
-      <img src="images/c++game2dss3.png" alt="C++ project 1 screenshot 3" class="slide">
+      <img src="images/TowerDss.png" alt="Target Trainer 3D gameplay 1" class="slide active">
+      <img src="images/TowerDss2.png" alt="Target Trainer 3D gameplay 2" class="slide">
+      <img src="images/TowerDss3.png" alt="Target Trainer 3D gameplay 3" class="slide">
+      <img src="images/TowerDss4.png" alt="Target Trainer 3D gameplay 4" class="slide">
     </div>
     <div class="project-text">
-      <h3>Pathfinding Visualizer</h3>
-      <p>invullen game notes </p>
-      <p><strong>Tools:</strong> C++, SFML</p>
+      <h3>Tower Defence 3D</h3>
+      <p>A 3D tower defense game with a plug-and-play enemy system for smooth wave creation.
+        Build and upgrade four turrets through three tiers to stop incoming enemies.
+        Play across two rounds with changing locations and multiple waves.</p>
+      <p><code>Tools:</code> 🟦 Unity, 🟦 C#</p>
       <a href="https://github.com/JuulScripts/Tower-Defense-J_D/tree/main/Assets" class="btn" target="_blank">View on GitHub</a>
     </div>
   </div>
-
-  <!-- C++ Project 2 -->
-  <div class="project-card">
-    <div class="slider">
-      <img src="images/CppProject2.png" alt="C++ Project 2 screenshot" class="slide active">
-      <img src="images/CppProject2b.png" alt="C++ Project 2 screenshot 2" class="slide">
-    </div>
-    <div class="project-text">
-      <h3>Game of Life</h3>
-      <p> invullen game notes </p>
-      <p><strong>Tools:</strong> C++, SDL2</p>
-      <a href="https://github.com/DaanEhumm/CppGameOfLife" class="btn" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-
-
-  <!-- Divider before Unity C# projects -->
-  <h2 class="section-title">Unity C# Projects</h2>
-
-  <!-- Unity Project 1 (3D shooter) -->
+  <!-- Unity Project 2 (3D shooter) -->
   <div class="project-card">
     <div class="slider">
       <img src="images/3DGameSS.png" alt="Target Trainer 3D gameplay 1" class="slide active">
@@ -73,12 +80,12 @@
     <div class="project-text">
       <h3>Target Trainer 3D</h3>
       <p>A fast-paced 3D shooter mini-game where you practice your aim by shooting targets in a test arena. The faster and more precise you are, the higher you score on the leaderboard.</p>
-      <p><strong>Tools:</strong> Unity, C#</p>
+      <p><code>Tools:</code> 🟦 Unity, 🟦 C#</p>
       <a href="https://github.com/DaanEhumm/Unity3DGame" class="btn" target="_blank">View on GitHub</a>
     </div>
   </div>
 
-  <!-- Unity Project 2 (2D survival) -->
+  <!-- Unity Project 3 (2D survival) -->
   <div class="project-card">
     <div class="slider">
       <img src="images/2DGameSS.png" alt="Survival game screenshot 1" class="slide active">
@@ -88,57 +95,139 @@
     <div class="project-text">
       <h3>Survival Arena 2D</h3>
       <p>A challenging 2D survival game where the objective is simple: stay alive for as long as possible. Waves of enemies continuously spawn, and once you die, it’s game over — restart and try to beat your best time.</p>
-      <p><strong>Tools:</strong> Unity, C#</p>
-      <a href="https://github.com/DaanEhumm/Unity2DGame" class="btn" target="_blank">View on GitHub</a>
+      <p><code>Tools:</code> 🟦 Unity, 🟦 C#</p>
+      <a href="https://github.com/DaanEhumm/Unity2dgameMAIN/tree/main/Assets/Mijn%20DIngen/Scripts" class="btn" target="_blank">View on GitHub</a>
+    </div>
+  </div>
+   <!-- Switch Language and tools -->
+<!-- C++ Project 1 -->
+  <h2 class="section-title">C++ Projects</h2>
+
+  <div class="project-card">
+    <div class="slider">
+      <img src="images/C++game2dss.png" alt="C++ Project 1 screenshot" class="slide active">
+      <img src="images/C++game2dss2.png" alt="C++ Project 1 screenshot 2" class="slide">
+    </div>
+    <div class="project-text">
+      <h3>Survival Game 2D</h3>
+      <p>This project was all about learning c++ with the use of sfml libraries. While wroking together with my
+        classmate. The code is more interesting than the gameplay... Working animations, loading in and using assests outside off the sfml window
+      and just using SFML for the first time was the goal.</p>
+      <p><code>Tools:</code> 🟪 C++, SFML</p>
+      <a href="https://github.com/DaanEhumm/JD_CplusplusShoot/tree/Dev_/JD_ShootSFML/JD_ShootSFML" class="btn" target="_blank">View on GitHub</a>
     </div>
   </div>
 
+  <!-- Text Based projects -->
 </section>
 
   <section id="contact" class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="daan.hummeling@gmail.com">daan.hummeling@gmail.com"</a></p>
-    <p>GitHub: <a href="https://github.com/DaanEhumm">Github.com/DaanEhumm</a></p>
-  </section>
+  <h2>Contact Me</h2>
+  <div class="contact-container">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><a href="mailto:daan.hummeling@gmail.com">📧 daan.hummeling@gmail.com</a></p>
+      <p><a href="https://github.com/DaanEhumm" target="_blank">💻 github.com/DaanEhumm</a></p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form" action="https://formspree.io/f/mdklpbyd" method="POST">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
 
   <footer class="footer">
     <p>&copy; 2025 Daan Hummeling</p>
   </footer>
 
   <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {
-      threshold: 0.3
+// Fade-in for .animate-in and .project-card only
+const fadeObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+
+      // If it's a project-card, stagger its children
+      if (el.classList.contains('project-card')) {
+        const children = el.querySelectorAll('.project-text, .slider');
+        children.forEach((child, i) => {
+          setTimeout(() => {
+            child.classList.add('visible');
+          }, i * 150);
+        });
+      }
+
+      el.classList.add('visible'); // normal animate-in
+      fadeObserver.unobserve(el); // run once
+    }
+  });
+}, { threshold: 0.3 });
+
+document.querySelectorAll('.animate-in, .project-card')
+  .forEach(el => fadeObserver.observe(el));
+
+
+// Slider Functionality
+document.querySelectorAll('.slider').forEach(slider => {
+  const slides = slider.querySelectorAll('.slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
     });
+  }
 
-    document.querySelectorAll('.animate-in').forEach(el => observer.observe(el));
-  </script>
-  <script>
-  // For each project-card slider, set up its own cycle
-  document.querySelectorAll('.slider').forEach(slider => {
-    const slides = slider.querySelectorAll('.slide');
-    let currentSlide = 0;
+  // Auto-play this slider
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  }, 5000);
+});
 
-    function showSlide(index) {
-      slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-          slide.classList.add('active');
+
+// Nav scroll shadow
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector(".nav");
+  if (window.scrollY > 20) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
+  }
+});
+
+
+// Scroll spy for nav links
+const sections = document.querySelectorAll("section, header");
+const navLinks = document.querySelectorAll(".nav-links a");
+
+const observerOptions = {
+  root: null,
+  threshold: 0.3,
+  rootMargin: "-20% 0px -60% 0px"
+};
+
+const sectionObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").slice(1) === entry.target.id) {
+          link.classList.add("active");
         }
       });
     }
-
-    // Auto-play this slider
-    setInterval(() => {
-      currentSlide = (currentSlide + 1) % slides.length;
-      showSlide(currentSlide);
-    }, 5000); // 5 seconds per slide
   });
+}, observerOptions);
+
+sections.forEach(section => sectionObserver.observe(section));
 </script>
 
 </body>
