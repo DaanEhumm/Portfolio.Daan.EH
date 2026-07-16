@@ -1,234 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" >
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Daan Hummeling</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet" >
-  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="nav">
+  <!-- NAV -->
+  <nav class="nav" id="topnav">
     <div class="logo">Daan Hummeling</div>
     <ul class="nav-links">
       <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
       <li><a href="#projects" class="nav-link">Projects</a></li>
       <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- HERO -->
   <header class="hero" id="home">
-    <div class="hero-float-text">print("Hello, world!")</div>
-  <div class="hero-content animate-in">
-    <div class="hero-inner">
+    <div class="hero-float f1">print("Hello, world!")</div>
+    <div class="hero-float f2">new GameObject();</div>
+    <div class="hero-float f3">// TODO: get hired</div>
+    <div class="hero-content">
       <h1>Daan Hummeling</h1>
-      <p>Software Development Student</p>
-      <a href="https://github.com/DaanEhumm" class="btn">View My Work on Github </a>
+      <p class="hero-sub">Junior Software Dev</p>
+      <p class="hero-tagline">C# · Unity · C++ · SFML · HTML/CSS</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="https://github.com/DaanEhumm" target="_blank" class="btn outline">GitHub →</a>
+      </div>
     </div>
-  </div>
-</header>
-<!-- About me-->
- <section id="about" class="about animate-in">
-  <div class="about-container">
-    <img src="images/BackgroundSS.jpg" alt="Daan Hummeling" class="about-img">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hi, I’m Daan,— a 22-year-old software development student with a big passion for gaming and coding.
-        I only started programming in January 2025, but I’ve been hooked ever since writing my first script.
-        What I really enjoy is problem-solving, logical thinking, and seeing all the pieces of a project come together.
-      </p>
-      <p>
-        Since February 2025, I’ve been enrolled in a three-year software development study,
-        where I’ve made rapid progress — joining halfway through year one and, just six months later, already moving into year three.
-        My main focus has been on <code>C#</code> and some <code>C++</code> projects to learn the fundamentals and workflow,
-        but I also have basic knowledge of <code>HTML</code> and <code>CSS</code>.
-        I’m a quick learner and always eager to pick up new tools, languages, or work methods if it helps me grow as a developer.
-      </p>
-    </div>
-  </div>
-</section>
+  </header>
 
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-inner">
+      <div class="about-sidebar">
+        <img src="images/BackgroundSS.jpg" alt="Daan Hummeling" class="about-avatar">
+        <div class="sidebar-label">Location</div>
+        <div class="sidebar-value">Netherlands</div>
+        <div class="sidebar-label">Study</div>
+        <div class="sidebar-value">Software Development<br><span class="sidebar-note">Degree June 2026</span></div>
+        <div class="sidebar-label">Focus</div>
+        <div class="sidebar-value">Game Dev · Backend · C#</div>
+        <div class="sidebar-label">Tech stack</div>
+        <div class="skill-tags">
+          <span class="tag">C#</span>
+          <span class="tag">Unity</span>
+          <span class="tag">C++</span>
+          <span class="tag">SFML</span>
+          <span class="tag green">HTML</span>
+          <span class="tag green">CSS</span>
+          <span class="tag green">SQL</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hi, I'm Daan — a 22-year-old junior software dev from the Netherlands. I picked up programming in January 2025 and immediately got hooked. What draws me in is the problem-solving side of things: breaking down a challenge into pieces, creating the logic, and watching it actually work.</p>
+        <p>I started in a three-year software development study in February 2025, I graduated in June 2026 and am looking for the next step in my career. My main focus has been on <strong>C# and Unity</strong> for game development, with additional projects in <strong>Html/css</strong> and <strong>C++ with SFML</strong> and some other front and backend web work on the side. I learn quickly and always push myself to go beyond the assignment brief.</p>
+        <p>Some of the projects here were made as school projects, others were made during an internship. I'm currently working on a personal side project. I enjoy adding extra systems, polishing mechanics, and figuring out how professional developers solve the same problems I'm working on.</p>
+        <div class="highlight-box">
+          <p><strong>What I'm looking for:</strong> A junior developer role where I can keep learning at pace, contribute to real projects, and grow inside a team that takes craft seriously.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
   <section id="projects">
-  <h2 class="section-title">Unity C# Projects</h2>
-  <!-- Unity Project 1 (3d type )-->
-<div class="project-card">
-    <div class="slider">
-      <img src="images/TowerDss.png" alt="Target Trainer 3D gameplay 1" class="slide active">
-      <img src="images/TowerDss2.png" alt="Target Trainer 3D gameplay 2" class="slide">
-      <img src="images/TowerDss3.png" alt="Target Trainer 3D gameplay 3" class="slide">
-      <img src="images/TowerDss4.png" alt="Target Trainer 3D gameplay 4" class="slide">
+    <div class="section-header">
+      <div class="section-eyebrow">// what I've built</div>
+      <h2 class="section-title">Projects</h2>
+      <div class="section-divider"></div>
     </div>
-    <div class="project-text">
-      <h3>Tower Defence 3D</h3>
-      <p>A 3D tower defense game with a plug-and-play enemy system for smooth wave creation.
-        Build and upgrade four turrets through three tiers to stop incoming enemies.
-        Play across two rounds with changing locations and multiple waves.</p>
-      <p><code>Tools:</code> 🟦 Unity, 🟦 C#</p>
-      <a href="https://github.com/JuulScripts/Tower-Defense-J_D/tree/main/Assets" class="btn" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-  <!-- Unity Project 2 (3D shooter) -->
-  <div class="project-card">
-    <div class="slider">
-      <img src="images/3DGameSS.png" alt="Target Trainer 3D gameplay 1" class="slide active">
-      <img src="images/3DGameSS2.png" alt="Target Trainer 3D gameplay 2" class="slide">
-      <img src="images/3DGameSS3.png" alt="Target Trainer 3D gameplay 3" class="slide">
-      <img src="images/3DGameSS4.png" alt="Target Trainer 3D gameplay 4" class="slide">
-    </div>
-    <div class="project-text">
-      <h3>Target Trainer 3D</h3>
-      <p>A fast-paced 3D shooter mini-game where you practice your aim by shooting targets in a test arena. The faster and more precise you are, the higher you score on the leaderboard.</p>
-      <p><code>Tools:</code> 🟦 Unity, 🟦 C#</p>
-      <a href="https://github.com/DaanEhumm/Unity3DGame" class="btn" target="_blank">View on GitHub</a>
-    </div>
-  </div>
 
-  <!-- Unity Project 3 (2D survival) -->
-  <div class="project-card">
-    <div class="slider">
-      <img src="images/2DGameSS.png" alt="Survival game screenshot 1" class="slide active">
-      <img src="images/2DGameSS2.png" alt="Survival game screenshot 2" class="slide">
-      <img src="images/2DGameSS3.png" alt="Survival game screenshot 3" class="slide">
-    </div>
-    <div class="project-text">
-      <h3>Survival Arena 2D</h3>
-      <p>A challenging 2D survival game where the objective is simple: stay alive for as long as possible. Waves of enemies continuously spawn, and once you die, it’s game over — restart and try to beat your best time.</p>
-      <p><code>Tools:</code> 🟦 Unity, 🟦 C#</p>
-      <a href="https://github.com/DaanEhumm/Unity2dgameMAIN/tree/main/Assets/Mijn%20DIngen/Scripts" class="btn" target="_blank">View on GitHub</a>
-    </div>
-  </div>
-   <!-- Switch Language and tools -->
-<!-- C++ Project 1 -->
-  <h2 class="section-title">C++ Projects</h2>
+    <div class="projects-grid">
 
-  <div class="project-card">
-    <div class="slider">
-      <img src="images/C++game2dss.png" alt="C++ Project 1 screenshot" class="slide active">
-      <img src="images/C++game2dss2.png" alt="C++ Project 1 screenshot 2" class="slide">
-    </div>
-    <div class="project-text">
-      <h3>Survival Game 2D</h3>
-      <p>This project was all about learning c++ with the use of sfml libraries. While wroking together with my
-        classmate. The code is more interesting than the gameplay... Working animations, loading in and using assests outside off the sfml window
-      and just using SFML for the first time was the goal.</p>
-      <p><code>Tools:</code> 🟪 C++, SFML</p>
-      <a href="https://github.com/DaanEhumm/JD_CplusplusShoot/tree/Dev_/JD_ShootSFML/JD_ShootSFML" class="btn" target="_blank">View on GitHub</a>
-    </div>
-  </div>
+      <!-- PROJECT 1 -->
+       <div class="pcard" data-index="0">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">01</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">Survival Island</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">3D Survival / Action</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-collab">👥 Collab</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>The exam project — a 3D Unity survival game where the player is stranded on an island after a shipwreck. Cannibals have taken the crew hostage. The goal: eliminate all enemies, find the escape boat, and free everyone. Built as a full game with a proper beginning and end.</p>
+          <h4>Systems and features</h4>
+          <ul class="feature-list">
+            <li>first-person player controller with smooth movement and combat</li>
+            <li>Weapon system with multiple weapons, damage calculation, and ammunition</li>
+            <li>Full animation system synced to movement and combat states</li>
+            <li>Enemy AI with patrol routes, camp zones, and alert system (alarm bell mechanic)</li>
+            <li>Dynamic lighting used for atmosphere and gameplay signalling</li>
+            <li>Objective tracker: crew members to rescue shown in UI</li>
+            <li>Clear win condition: all enemies defeated and escape boat located</li>
+          </ul>
+          <h4>The AI alarm system</h4>
+          <p>One feature I'm proud of is the enemy alert mechanic. If a player is spotted, the ai will ring an alarm bell and trigger nearby enemies, who switch to a search-and-pursue state. This meant building state machine logic for enemies that responds to shared events — a common pattern in professional game AI.</p>
+          <a href="https://github.com/JuulScripts/Examen-project" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
 
-  <!-- Text Based projects -->
-</section>
+      <!-- PROJECT 2 -->
+        <div class="pcard" data-index="1">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">02</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">MagiColorLike</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">Creative Tool / Editor</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-solo">Solo</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>An interactive character customisation tool built in Unity. A white robot character is displayed on screen and users can upload any image to apply it as the robot's texture. The UV map of the robot can also be exported as a printable colouring sheet — so players can draw their own skin by hand, photograph it, and apply it in the app.</p>
+          <h4>Key technical features</h4>
+          <ul class="feature-list">
+            <li>Runtime image upload pipeline: reads an image from disk and maps it to a 3D mesh's UV coordinates at runtime</li>
+            <li>UV map export as a printable PDF/image</li>
+            <li>Texture swapping on a rigged character without breaking materials or normals</li>
+            <li>Clean UI for upload, preview, and reset</li>
+          </ul>
+          <h4>What makes this unusual</h4>
+          <p>This project was more focused as a tool or a game feature. The UV-based workflow is similar to what professional games use for custom character skins. Handling runtime texture replacement correctly — without memory leaks or material conflicts — was the main technical challenge.</p>
+          <a href="https://github.com/GreyGames/MagiColorLike/tree/main/MagicolorLikeDaansL" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
 
+      <!-- PROJECT 3 -->
+      <div class="pcard" data-index="2">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">03</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">TopDown School RPG</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">Educational / 2D RPG</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-solo">Solo</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>A Pokémon-inspired 2D top-down RPG designed for young children. The player attends school, completes subject-based mini-games and small quests, and unlocks cosmetic rewards. The world is semi-open with areas that unlock as the player progresses. Every feature, system, and piece of code was written and designed by me.</p>
+          <h4>Systems I built from scratch</h4>
+          <ul class="feature-list">
+            <li>Top-down movement and collision with tile-based world navigation</li>
+            <li>Quest and objective system tracking multiple simultaneous tasks</li>
+            <li>Mini-games tied to school subjects (maths, spelling, etc.)</li>
+            <li>Cosmetic unlock system with persistent progress saved between sessions</li>
+            <li>Progressive world unlock: areas only accessible after completing related quests</li>
+            <li>NPC dialogue system with branching conversation</li>
+          </ul>
+          <h4>Design challenge</h4>
+          <p>Designing for children means every system needs to be immediately understandable with minimal reading. The UX decisions here were just as important as the code: large clear icons, forgiving controls, and short feedback loops so young players always know what to do next.</p>
+          <a href="https://github.com/GreyGames/TopDownSchoolRpg" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 4 -->
+        <div class="pcard" data-index="3">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">04</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">SubSurfWeb</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">Endless Runner / Promo</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-collab">👥 Collab</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>A 3D endless runner made in one week as a test game for KPN's World Cup campaign. Players run through a track, collect coins, and pass through slow zones that temporarily double the score multiplier. Tight deadline, real client — the game had to work and look decent fast.</p>
+          <h4>Systems in the game</h4>
+          <ul class="feature-list">
+            <li>Procedural track generation for an infinite run feel</li>
+            <li>Coin pickup system with running score counter</li>
+            <li>Slow zones with 2× score multiplier logic</li>
+            <li>Smooth player movement with lane-switching mechanics</li>
+            <li>Game over and restart flow with final score display</li>
+          </ul>
+          <h4>The one-week challenge</h4>
+          <p>Delivering a playable, bug-free game in a week meant making fast decisions and prioritising what actually matters for the experience. Feature scope had to be cut consciously rather than lazily — a real-world constraint I hadn't worked under before.</p>
+          <a href="https://github.com/GreyGames/SubSurfWeb" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 5 -->
+        <div class="pcard" data-index="4">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">05</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">IssueTrackingD</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">Web App / Ticket System</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag green">HTML</span><span class="tag green">CSS</span><span class="tag green">SQL</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-solo">Solo</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>A full-stack ticket management system with two user roles: regular users can create and track support tickets, while admins can assign tickets to employees or link them to a schedule. Built completely solo, covering both the frontend interface and the backend database logic.</p>
+          <h4>What I built</h4>
+          <ul class="feature-list">
+            <li>User authentication with role-based access (user vs admin)</li>
+            <li>Ticket creation form with status tracking (open, in progress, resolved)</li>
+            <li>Admin dashboard for assigning tickets to staff members</li>
+            <li>Schedule linking: tickets can be attached to a planned timeslot</li>
+            <li>Database layer with SQL for persistent ticket and user storage</li>
+            <li>Clean, functional frontend with status indicators</li>
+          </ul>
+          <h4>Why this is relevant</h4>
+          <p>This is a different kind of project from my game work — it's a real-world business tool. Building it meant thinking about data structure, user flows, and how the frontend and backend communicate.</p>
+          <a href="https://github.com/DaanEhumm/IssueTrackingDS" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 6 -->
+        <div class="pcard" data-index="5">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">06</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">Race Pigeons</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">Simulation / RPG</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-collab">👥 Collab</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>A pigeon racing simulation game set in the Netherlands. Players care for their pigeons, level them up, and compete in races across a real-inspired map of Dutch locations. The game blends creature-care mechanics with competitive racing strategy.</p>
+          <h4>Key systems I built</h4>
+          <ul class="feature-list">
+            <li>Pigeon care and levelling loop: feeding, training, and stat progression that directly affect race performance</li>
+            <li>Real time Day/Night cycle</li>
+            <li>Map-based race system with multiple Dutch locations unlocked over time</li>
+            <li>Item shop with consumables and upgrade items affecting pigeon stats</li>
+            <li>Persistent save system so pigeon progress carries between sessions</li>
+          </ul>
+          <h4>What makes it interesting</h4>
+          <p>The scope of this project is larger than it might sound on paper. Every system connects — a poorly fed pigeon performs worse in races, progress is saved per user, and the map system had to handle both navigation logic and live race tracking at the same time. Coordinating all of that with a classmate meant we had to keep our code clean and clearly divided.</p>
+          <a href="https://github.com/GreyGamesBV/RacePidgeons/tree/main/Assets/Scripts" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 7 -->
+        <div class="pcard" data-index="6">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">07</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">Tower Defence 3D</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">Strategy / Tower Defence</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-collab">👥 Collab</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>A 3D tower defence game with a fully plug-and-play wave system. Zombies advance toward a protected zone across multiple rounds — players place and upgrade towers to stop them. The game spans multiple rounds in different locations, each containing multiple waves.</p>
+          <h4>Core systems</h4>
+          <ul class="feature-list">
+            <li>Modular wave system: add new enemy waves by configuring a data object, no code changes needed</li>
+            <li>Four tower types — melee, ranged, and specialist variants — each with three upgrade tiers</li>
+            <li>Tower placement grid with valid/invalid zone detection</li>
+            <li>Currency system: earn gold per kill, spend on placement and upgrades</li>
+            <li>Round and wave progression with clear UI feedback</li>
+          </ul>
+          <h4>The plug-and-play wave system</h4>
+          <p>The wave system was designed to be data-driven rather than hardcoded. Each wave is defined in a ScriptableObject — enemy types, counts, spawn delay — meaning new waves can be created without touching any scripts. This pattern helped significantly reduces the risk of bugs when adding content.</p>
+          <a href="https://github.com/JuulScripts/Tower-Defense-J_D/tree/main/Assets" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 8 -->
+      <div class="pcard" data-index="7">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">08</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">Target Trainer 3D</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">FPS Mini-game</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-solo">Solo</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>A fast-paced aim-training mini-game. Players stand on a weapon range and work through two zones: a target range where pop-up targets fall and reset when hit, and a room clear where bottles and reactive props can be destroyed. Speed and accuracy drive the score — missing deducts points. A leaderboard tracks high scores across sessions.</p>
+          <h4>Everything was self-built</h4>
+          <ul class="feature-list">
+            <li>First-person player controller with mouse-look and weapon handling</li>
+            <li>Shooting system with raycasts, hit detection, and miss penalty logic</li>
+            <li>Reactive targets: pop-up targets that fall on hit and reset after a delay</li>
+            <li>Destructible props: bottles and objects with physics reactions on impact</li>
+            <li>Score system with speed multiplier — faster hits earn more</li>
+            <li>Persistent leaderboard saving top scores between sessions</li>
+            <li>Full animation set for weapon draw, fire, and reload</li>
+          </ul>
+          <h4>Design decision: miss penalty</h4>
+          <p>Adding a deduction for missed shots was intentional. It makes the game about precision, not just speed, and raises the skill ceiling significantly. Small design decisions like this have a big effect on how a mechanic actually feels to play.</p>
+          <a href="https://github.com/DaanEhumm/Unity3DGame" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 9 -->
+      <div class="pcard" data-index="8">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">9</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">Survival Arena 2D</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">2D Survival / Arcade</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">Unity</span><span class="tag">C#</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-solo">Solo</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>A 2D top-down survival game with a single goal: stay alive for as long as possible. Skeleton enemies spawn continuously in increasing numbers — when the player dies, it's game over. Every line of code and every system was written by me.</p>
+          <h4>Systems I built</h4>
+          <ul class="feature-list">
+            <li>Top-down player controller with smooth 8-directional movement</li>
+            <li>Enemy spawner with difficulty scaling: more enemies and faster spawn rate over time</li>
+            <li>Combat system: player attacks enemies, enemies deal damage on contact</li>
+            <li>Health system with visual feedback (hit flash, death animation)</li>
+            <li>Survival timer displayed live on screen as the core goal metric</li>
+            <li>Game over flow with final time displayed and restart option</li>
+          </ul>
+          <h4>Better understanding of scaling</h4>
+          <p>Survival games live or die by their difficulty curve. Too easy and it's boring, too hard and players quit instantly. Tuning the spawn rate escalation — how many enemies, how fast, from which directions — involved a lot of playtesting and adjusting numbers.</p>
+          <a href="https://github.com/DaanEhumm/Unity2dgameMAIN/tree/main/Assets/Mijn%20DIngen/Scripts" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 10 -->
+      <div class="pcard" data-index="9">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">10</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">2D Shooter</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type">First C++ project</span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag">C++</span><span class="tag">SFML</span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-collab">👥 Collab</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>What is it?</h4>
+          <p>A simple 2D shooter built as a first exploration of C++. The goal wasn't a polished game — it was to understand the fundamentals of C++ and the SFML graphics library coming from a C# / Unity background.</p>
+          <h4>What I implemented</h4>
+          <ul class="feature-list">
+            <li>Player movement with smooth directional input handling</li>
+            <li>Shooting mechanics with projectile spawning and collision detection</li>
+            <li>Basic enemy damage and health system</li>
+            <li>Score tracking displayed in-game</li>
+            <li>Working sprite animations loaded from external asset sheets</li>
+            <li>Rendering pipeline inside an SFML window from scratch</li>
+          </ul>
+          <h4>Why this matters</h4>
+          <p>Moving from C# to C++ means thinking about memory management, pointers, and manual resource handling — things Unity abstracts away. Setting up SFML without a game engine forced me to understand what an engine actually does for you.</p>
+          <a href="https://github.com/DaanEhumm/JD_CplusplusShoot/tree/Dev_/JD_ShootSFML/JD_ShootSFML" class="btn" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- PROJECT 11 -->
+      <div class="pcard" data-index="10">
+        <div class="pcard-summary">
+          <div class="pcard-top">
+            <span class="pcard-number">11</span>
+            <span class="pcard-chevron">▾</span>
+          </div>
+          <h3 class="pcard-title">Working on more...</h3>
+          <div class="pcard-meta-row">
+            <span class="pcard-type"></span>
+          </div>
+          <div class="pcard-tags">
+            <span class="tag"></span><span class="tag"></span>
+          </div>
+          <div class="pcard-collab-row">
+            <span class="pcard-collab">progresss...</span>
+          </div>
+        </div>
+        <div class="pcard-detail">
+          <h4>1100100101001010010100</h4>
+          <ul class="feature-list">
+          </ul>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="contact">
-  <h2>Contact Me</h2>
-  <div class="contact-container">
-    <!-- Contact Info -->
-    <div class="contact-info">
-      <p><a href="mailto:daan.hummeling@gmail.com">📧 daan.hummeling@gmail.com</a></p>
-      <p><a href="https://github.com/DaanEhumm" target="_blank">💻 github.com/DaanEhumm</a></p>
+    <h2>Get in Touch</h2>
+    <p class="contact-sub">I'm looking for a junior role eager to learn and grow. If something here caught your eye, I'd love to hear from you.</p>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Direct contact</h3>
+        <a href="mailto:daan.hummeling@gmail.com" class="contact-link">
+          <span class="icon">📧</span> daan.hummeling@gmail.com
+        </a>
+        <a href="https://github.com/DaanEhumm" target="_blank" class="contact-link">
+          <span class="icon">💻</span> github.com/DaanEhumm
+        </a>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/mdklpbyd" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
+  </section>
 
-    <!-- Contact Form -->
-    <form class="contact-form" action="https://formspree.io/f/mdklpbyd" method="POST">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" rows="5" placeholder="Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-  </div>
-</section>
-
+  <!--FOOTER-->
   <footer class="footer">
-    <p>&copy; 2025 Daan Hummeling</p>
+    <p>&copy; 2025 Daan Hummeling · Built by hand</p>
   </footer>
 
   <script>
-// Fade-in for .animate-in and .project-card only
-const fadeObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      const el = entry.target;
-
-      // If it's a project-card, stagger its children
-      if (el.classList.contains('project-card')) {
-        const children = el.querySelectorAll('.project-text, .slider');
-        children.forEach((child, i) => {
-          setTimeout(() => {
-            child.classList.add('visible');
-          }, i * 150);
-        });
-      }
-
-      el.classList.add('visible'); // normal animate-in
-      fadeObserver.unobserve(el); // run once
-    }
-  });
-}, { threshold: 0.3 });
-
-document.querySelectorAll('.animate-in, .project-card')
-  .forEach(el => fadeObserver.observe(el));
-
-
-// Slider Functionality
-document.querySelectorAll('.slider').forEach(slider => {
-  const slides = slider.querySelectorAll('.slide');
-  let currentSlide = 0;
-
-  function showSlide(index) {
-    slides.forEach((slide, i) => {
-      slide.classList.remove('active');
-      if (i === index) {
-        slide.classList.add('active');
-      }
+    // Nav scroll shadow
+    const nav = document.getElementById('topnav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
     });
-  }
 
-  // Auto-play this slider
-  setInterval(() => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
-  }, 5000);
-});
+    // ── Full-width expand panel ──
+    const grid = document.querySelector('.projects-grid');
+    const panel = document.createElement('div');
+    panel.className = 'project-expand-panel';
+    panel.innerHTML = '<div class="expand-inner"></div>';
+    // insert panel after grid
+    grid.parentNode.insertBefore(panel, grid.nextSibling);
 
+    const expandInner = panel.querySelector('.expand-inner');
 
-// Nav scroll shadow
-window.addEventListener("scroll", () => {
-  const nav = document.querySelector(".nav");
-  if (window.scrollY > 20) {
-    nav.classList.add("scrolled");
-  } else {
-    nav.classList.remove("scrolled");
-  }
-});
+    // store detail HTML per card
+    const cards = document.querySelectorAll('.pcard');
 
+    cards.forEach(card => {
+      card.querySelector('.pcard-summary').addEventListener('click', () => {
+        const isOpen = card.classList.contains('open');
 
-// Scroll spy for nav links
-const sections = document.querySelectorAll("section, header");
-const navLinks = document.querySelectorAll(".nav-links a");
+        // close all cards
+        cards.forEach(c => c.classList.remove('open'));
 
-const observerOptions = {
-  root: null,
-  threshold: 0.3,
-  rootMargin: "-20% 0px -60% 0px"
-};
+        if (isOpen) {
+          // clicking open card → close panel
+          panel.classList.remove('open');
+          expandInner.innerHTML = '';
+        } else {
+          // open this card
+          card.classList.add('open');
 
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      navLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href").slice(1) === entry.target.id) {
-          link.classList.add("active");
+          // build panel content from card data
+          const num   = card.querySelector('.pcard-number').textContent;
+          const title = card.querySelector('.pcard-title').innerHTML;
+          const type  = card.querySelector('.pcard-type').textContent;
+          const tags  = card.querySelector('.pcard-tags').innerHTML;
+          const collab = card.querySelector('.pcard-collab-row').innerHTML;
+          const detail = card.querySelector('.pcard-detail').innerHTML;
+
+          expandInner.innerHTML = `
+            <div class="expand-meta">
+              <div class="expand-num">${num}</div>
+              <h3 class="expand-title">${title}</h3>
+              <div class="expand-type">${type}</div>
+              <div class="expand-tags">${tags}</div>
+              <div class="expand-collab">${collab}</div>
+            </div>
+            <div class="expand-body">${detail}</div>
+          `;
+
+          panel.classList.add('open');
+
+          // smooth scroll to panel
+          setTimeout(() => {
+            panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }, 50);
         }
       });
-    }
-  });
-}, observerOptions);
+    });
 
-sections.forEach(section => sectionObserver.observe(section));
-</script>
+    // Scroll-triggered fade-in
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    document.querySelectorAll('.pcard').forEach(c => observer.observe(c));
 
+    // Scroll spy
+    const sections = document.querySelectorAll('section, header');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    const spyObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href').slice(1) === entry.target.id);
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -60% 0px', threshold: 0.1 });
+    sections.forEach(s => spyObserver.observe(s));
+  </script>
 </body>
 </html>
